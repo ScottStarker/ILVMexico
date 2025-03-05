@@ -1,0 +1,228 @@
+/* CSS all.css */
+
+  a:link, a:visited, a:active, a:hover {
+	background-color: white;
+	text-decoration: none;
+	line-height: 17pt;
+  }
+  a.under:link, a.under:visited, a.under:active, a.under:hover {
+	background-color: white;
+  	text-decoration: underline;
+	line-height: 15pt;
+  }
+  a:link, a:active, a.under:link, a.under:active {
+  	 /*color: #566833;*/
+	 color: #0033CC;
+  }
+  a:hover, a.under:hover {
+	/*color: #20381D;*/
+	color: #EC0000;
+	text-decoration: underline;
+  }
+  a:visited, a.under:visited {
+	color: #B35B9D;
+  }
+  a.under:visited {
+	text-decoration: underline;
+  }
+  
+  html {
+	height: 100%;  
+	width: 100%;
+	margin: 0;
+	padding: 0;
+  }
+
+  /*body {
+	font-family: "Times New Roman", Times, serif;
+	height: 100%;
+	width: 100%;
+	background-color: #DFD4C2;
+  	line-height: 15pt;
+	font-size: 1em;
+	margin-top: 7px;
+	padding-top: 16px;
+	text-align: center;*/
+	/* margins are for frame centering */
+	/*margin-left: auto;
+	margin-right: auto;
+  }*/
+  h1, h2, h3, h4, h5, f6 {
+  	font-family: Leelawadee, 'Century Gothic', Arial, Geneva, Helvetica, sans-serif;
+	text-align: left;
+  }
+  h2 {
+  	font-size: 110%;
+  }
+  h3 {
+	font-size: 100%;
+ 	font-style: italic;
+  }
+ol {
+	text-align: left;
+}
+  div.header {
+  	background-color: white;
+	text-align: center;
+	width: 800px;
+	/* margins are for frame centering */
+	margin-left: auto;
+	margin-right: auto;
+  }
+  img.refreshpicture {
+	width: 800px;
+	vertical-align: bottom;
+	height: 150px;
+  }
+  p {
+  	text-align: justify;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+  }
+  p.f-copyright {
+  	text-align: center;
+    font-size: .8em;
+    line-height: 120%;
+  }
+  .indent {
+  	 padding-left: 16pt;
+	 padding-right: 16pt;
+	 padding-bottom: 0px;
+	 padding-top: 0pt;
+	 margin: 0px 0px 0px 0px;
+  }
+div.picturetext {
+    font-weight: bold;
+	text-align: center;
+}
+
+/* Language family and subfamily,
+   within a page that talks about more than one family.
+   These classes may also be used on <HR>.
+   */
+.familia, .family, .subfamilia, .subfamily {
+	margin: 0px 0px 0px 0px;
+	color: #566833;
+	font-size : large;
+	line-height : 120%;
+	font-weight : bold;
+	text-align: center;
+	font-family: "Century Gothic", Arial, Geneva, Helvetica, sans-serif;
+}
+/* See also th.familia below in section for indexes */
+
+/* Links within headings should be the same color as the headings.
+   We have to mention the pseudo-classes too, so that the colors here take precedence
+   over the colors specified for links elsewhere.
+   (".familia A" apparently ranks lower than "A:visited")
+   */
+.familia A:link, .family A:link, .subfamilia A:link, .subfamily A:link,
+.familia A:visited, .family A:visited, .subfamilia A:visited, .subfamily A:visited
+	{ color: #566833; }
+/* But, still use a distinct hover color */
+.familia A:hover, .family A:hover, .subfamilia A:hover, .subfamily A:hover
+	{ color: brown; }
+
+.lengua, .language {
+	margin: 0em 0em 0em 0em;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 1em;
+	line-height : 120%;
+	color: #8D9F5F;
+	text-align: center;
+	font-family: "Century Gothic", Arial, Geneva, Helvetica, sans-serif;
+}
+
+/* On language family pages, put the language, family, and subfamily names
+   to the outside margin,
+   so that they appear better centered around the initial graphic.
+   However, we don't want to do this if these class names are used
+   on other sorts of pages, so we have to specify that it's
+   only when .familia or .family are the top-level heading
+   that this is done.
+   */
+/*h1.familia, h2.subfamilia, h2.lengua, h3.lengua {
+	text-align: left;
+}*/
+/*h1.familiaC, h2.subfamiliaC, h2.lenguaC, h3.lenguaC {
+	text-align: center;
+}*/
+/*h1.family, h2.subfamily, h2.language, h3.language {
+	text-align: right;
+}*/
+/*h1.familyC, h2.subfamilyC, h2.languageC, h3.languageC {
+	text-align: center;
+}*/
+  ul {
+      margin: 0px 0px 0px 1.5em;
+	  padding: 0px 0px 0px 0px;
+	  text-align: left;
+  }
+  .unicode {
+	line-height: 138%;
+	font-family: "Charis SIL", "Doulos SIL", "TITUS Cyberbit Basic", Gentium, "Lucida Sans Unicode", "Arial Unicode MS", serif;
+  }
+
+.cita, .citation {
+	/* line-height: 1.2em; if <sup> is not used (IE). We need to get the Unicode characters for these characters. */
+	line-height: 100%;
+	font-weight: bold;
+	font-family: "Charis SIL", "Doulos SIL", "TITUS Cyberbit Basic", Gentium, "Lucida Sans Unicode", "Arial Unicode MS", serif;
+}
+
+/* *************************************************
+   Styles used to access the glossary
+*/
+
+/* Links to the glossary */
+a.gl, a.gl:link, a.gl:active, a.gl:visited { 
+  color: #804040;
+  text-decoration: underline;
+}
+
+.linktosamepage {
+	line-height: 300%;
+	text-align: center;
+	font-size: .9em;
+	vertical-align: bottom;
+}
+a.navLink {
+    margin-top: 30px;
+  }
+a.navLink:link, a.navLink:visited, a.navLink:active, a.navLink:hover {
+	text-decoration: underline;
+}
+div.masterTitle, div.masterTitleWithSubTitle {
+	font-family: Leelawadee, 'Century Gothic', Arial, Geneva, Helvetica, sans-serif;
+	padding-top: 20px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #566833;
+	text-align: center;
+}
+
+div.masterTitle {
+	padding-bottom: 20px;
+}
+
+div.masterTitleWithSubTitle {
+	padding-bottom: 5px;
+}
+div.masterSubTitle {
+	font-family: Leelawadee, 'Century Gothic', Arial, Geneva, Helvetica, sans-serif;
+	padding-top: 0px;
+	padding-bottom: 20px;
+	font-size: 1em;
+	font-weight: normal;
+	color: #566833;
+	text-align: center;
+}
+div.mainTitle {
+	font-family: Leelawadee, 'Century Gothic', Arial, Geneva, Helvetica, sans-serif;
+	padding-top: 20px;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #566833;
+	padding-bottom: 20px;
+}

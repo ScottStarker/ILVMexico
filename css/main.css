@@ -1,0 +1,283 @@
+/* CSS main.css */
+
+  a.menu:link, a.menu:visited, a.menu:active, a.menu:hover {
+	background-color: transparent;
+	font-family: "Century Gothic", Geneva, Arial, Helvetica, sans-serif;
+	border-width: 0px;
+	font-weight: normal;
+	font-size: 10.4pt;
+	text-decoration: none;
+	height: 30px;
+	/* the padding tags are for IE 7 so that it does raise the text of the menu. */
+    padding-top: 2px;
+    padding-bottom: 6px;
+    padding-right: 6px;
+    padding-left: 6px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	vertical-align: middle;
+  }
+  a.menu:link, a.menu:visited, a.menu:active, a.menu:hover {
+  	color: white;
+  }
+  a.menu:hover {
+	background-image: url(img/itemgradient3-hover.png);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+  }
+
+  .nav {
+	background-image: url(img/itemgradient3.png);
+	background-repeat: repeat-x;
+	height: 30px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: medium solid white;
+  }
+
+  a.version:link, a.version:visited, a.version:active, a.version:hover {
+	background-color: #EEE9DF;
+	text-decoration: none;
+	color: #B35B9D;
+  }
+  a.version:hover {
+	text-decoration: underline;
+  }
+ .version {
+	font-size: 7pt;
+	padding-right: 8px;
+	padding-left: 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	clear: left;
+	position: relative;
+	top: -23px;
+	border-left: 1px solid #DFD4C2;
+ }
+ .noversion {
+ 	background-color: #DFD4C2;
+	font-size: 7pt;
+	padding-right: 8px;
+	padding-left: 8px;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	clear: left;
+	position: relative;
+	top: -23px;
+ }
+ 
+ div.heading {
+	/*position: relative;
+	bottom: -23px;
+	right: -40px;*/
+	float: left;
+	margin: 22px 0px 0px 94px;
+ }
+ div.membrete {
+	/*position: relative;
+	bottom: -15px;
+	right: -32px;*/
+	float: left;
+	margin: 14px 0px 0px 94px;
+ }
+ div.heading2 {
+	position: relative;
+	bottom: -27px;
+	right: -88px;
+ }
+ div.membrete2 {
+	position: relative;
+	bottom: -18px;
+	right: -80px;
+ }
+ div.heading3 {
+	position: relative;
+	bottom: -4px;
+	right: 6px;
+ }
+ div.membrete3 {
+	position: relative;
+	bottom: 5px;
+	right: 6px;
+ }
+/* You may have to modify height in individual pages. */
+  div.title, div.titulo {
+	font-family: "Century Gothic", Geneva, Arial, Helvetica, sans-serif;
+	padding-top: 20px;
+  	text-align: center;
+ }
+/* You may have to modify margins in individual pages. */
+  div.FamLang {
+  	float: left;
+	margin-left: 180px;
+	margin-right: auto;
+ 	position: relative;
+	top: 10px;
+ }
+/* You may have to modify margin in individual pages. */
+  div.tapestry {
+  	float: right;
+	margin-right: 120px;
+	margin-left: auto;
+  }
+ img.logo {
+ 	width: 90px;
+	height: 90px;
+	float: left;
+	margin: 5px 0 3px 50px;
+	border-style: none
+ }
+  .subBody {
+  	background-color: white;
+	width: 800px;
+	/* margins are for centering */
+	margin-left: auto;
+	margin-right: auto;
+	/* The padding raises and lowers Firefox but it doesn't work for IE.
+	Have to use <br /> at the beginning and the end of the table.
+	padding-top: 18px;
+	padding-bottom: 18px;	*/
+  }
+  img.VerticalLine {
+ 	vertical-align: middle;
+	width: 1px;
+	height: 27px;
+	padding-right: 3px;
+	padding-left: 3px;
+  }
+  .seccion, .section {
+	  color: white;
+	  background-color: #8D9F5F;
+      font-size: 18px;
+	  line-height: 24pt;
+	  padding: 0px 0px 0px 0px;
+	  /* margin is the raising or lowering of the sub-title */
+	  margin: 27px 0px 15px 0px;
+      padding-left: 8px;
+	  font-family: Leelawadee, "Century Gothic", Geneva, Arial, Helvetica, sans-serif;
+	  font-weight: normal;
+	  text-align: left;
+  }
+.subseccion, .subsection {
+	color: #364220;
+	font-size : 13pt;
+	font-style : italic;
+	line-height : 120%;
+	margin: 1em 0em .5em 3px;
+    font-family: Leelawadee, "Century Gothic", Geneva, Arial, Helvetica, sans-serif;
+	font-weight : normal;
+	text-align: left;
+}
+div.breadcrumb {
+	font-size: 71%;
+	margin: 0px 15px 1px 15px;
+    line-height: 120%;      /* cubierto.css uses 'body' set to 'line-height: 120%;' which throws off the bilingual tags using Firefox */
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-align: left;
+}
+
+/* permiso: paragraphs acknowledging where graphics or other copyrighted material comes from. */
+p.permiso {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 80%;
+	line-height: 120%;
+    /* line-height : 1.2em%; if <sup> is not used (IE). We need to get the Unicode characters for these characters. */
+}
+/* graphicsLeft and graphicsRight need to have a <div style='height: ZZZpx;'> right before them.
+   graphicsLeft and graphicsRight may have to modify margins in individual pages. */
+div.graphics {
+	margin-top: 15px;
+ 	height: 280px;
+}
+div.graphicsLeft {
+	float: left;
+	margin-left: 20px;
+}
+div.graphicsRight {
+	float: right;
+	margin-right: 20px;
+}
+div.graphicsCenter {
+	text-align: center;
+	margin-top: 20px;
+}
+div.TextLeft {
+	float: left;
+	width: 360px;
+}
+div.TextRight {
+	float: right;
+	width: 360px;
+}
+/* used for author's signature at the bottom of an interface page */
+.signature, .date {
+	text-align: right;
+}
+td {
+	line-height: 23px;
+	text-align: left;
+}
+a {
+	height: 22px;
+}
+div.ISO {
+	font-size: 80%;
+	font-weight: normal;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	text-align: center;
+}
+p.biblio {
+	margin-bottom: 10px;
+}
+/* .ortografia, .orthography, .fonema, .phoneme tend to be single characters */
+.ortografia, .orthography {
+	/* line-height: 1.2em; if <sup> is not used (IE). We need to get the Unicode characters for these characters. */
+	line-height: 100%;
+	color: blue;
+	font-weight: bold;
+	font-family : "Charis SIL", "Doulos SIL", "TITUS Cyberbit Basic", Gentium, "Lucida Sans Unicode", "Arial Unicode MS", serif;
+}
+.fonema, .phoneme {
+	/* line-height: 1.2em; if <sup> is not used (IE). We need to get the Unicode characters for these characters. */
+	color: #A68855;
+	/* color: red; */
+	line-height: 100%;
+	font-weight: bold;
+	font-family : "Charis SIL", "Doulos SIL", "TITUS Cyberbit Basic", Gentium, "Lucida Sans Unicode", "Arial Unicode MS", serif;
+}
+span.traduccion, span.translation { font-weight: bold; }
+span.speaker { text-align: right; font-size: small; }
+span.speakerName { color: black; font-style: italic; }
+
+div.greeting {
+    font-size: small;
+}
+  hr.Line {
+  	color: #8D9F5F;
+	height: 2px;
+	width: 760px;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+  }
+
+img.SILPub {	/* book.jpg */
+	margin-bottom: -2px;
+	width: 35px;
+	height: 15px;
+	border: none;
+}
+
+#VarLang, #VarLang2, #VarLang3, #VarLang4 {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#VarLang td, #VarLang2 td, #VarLang3 td, #VarLang4 td {
+	border: gray thin solid;
+	padding-left: 10px;
+}
